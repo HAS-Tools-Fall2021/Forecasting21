@@ -79,16 +79,16 @@ Each week one or two people will be assigned the job of 'Evaluator'. Your job de
  <a name="evaluatorlist"></a>
  # Evaluator Assignments
  1. September 7: Laura
- 3. September 14:
- 4. September 21:
- 5. September 28:
- 6. October 5:
- 7. October 12:
- 8. October 19:
- 9. October 26:
- 10. November 2:
- 11. November 9:
- 12. November 16:
- 13. November 23:
- 14. November 30
- 15. December 7:
+ 2. September 14: Laura
+ 3. September 21: 
+ 4. September 28: Gigi
+ 5. October 5: Andrew
+ 6. October 12: David
+ 7. October 19: Monique
+ 8. October 26: Jason
+ 9. November 2: Sierra
+ 10. November 9: Kevin 
+ 11. November 16: Xiang
+ 12. November 23: Xingyu
+ 13. November 30: Stephanie
+ 14. December 7: Connal & Josh
