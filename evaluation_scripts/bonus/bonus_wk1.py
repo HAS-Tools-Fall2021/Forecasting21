@@ -3,6 +3,11 @@ import sys
 sys.path.insert(1, '../')
 import eval_functions as ef
 
+# %%
+# Name: Laura Condon
+# Description: Assigning bonus points to the first 3 people 
+# to submit their forecasts
+
 weeknum = 1
 
 all_names = ef.getFirstNames()

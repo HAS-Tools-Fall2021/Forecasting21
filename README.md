@@ -80,7 +80,7 @@ Each week one or two people will be assigned the job of 'Evaluator'. Your job de
  # Evaluator Assignments
  1. September 7: Laura
  2. September 14: Laura
- 3. September 21: 
+ 3. September 21: Xueyan
  4. September 28: Gigi
  5. October 5: Andrew
  6. October 12: David

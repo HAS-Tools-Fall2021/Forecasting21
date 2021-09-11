@@ -5,6 +5,7 @@ from datetime import datetime
 from matplotlib.pyplot import xticks
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import os
 import eval_functions as ef
 import dataretrieval.nwis as nwis
@@ -16,8 +17,7 @@ import plot_functions as pf
 #                Use number for week that just ended,
 #                found in Forecst_Dates.csv 
 
-#forecast_week = int(input('What forecast week is it? (1-16): '))  # week 14 (Xenia. Dec. 01, 2020)
-forecast_week = 1 
+forecast_week = 2 
 
 # %%
 station_id = "09506000"
@@ -26,14 +26,6 @@ station_id = "09506000"
 names = ef.getLastNames()
 firstnames = ef.getFirstNames()
 nstudent = len(names)
-
-# get start and end date of forecast week for 1 wk forecast
-week_date = ef.weekDates(forecast_week)
-start_date = week_date[0]
-stop_date = week_date[1]
-start_formatted = week_date[2]
-stop_formatted = week_date[3]
-print("Evaluating forecasts for", start_date, 'To', stop_date)
 
 # %%
 # Read in everyone's forecast entries
@@ -46,24 +38,49 @@ for i in range(nstudent):
     filepath = os.path.join('..', 'forecast_entries', filename)
     print(filepath)
     temp = pd.read_csv(filepath, index_col='Forecast #')
-    # print(temp.loc[(forecast_week - 1), '1week'])
     forecasts1[i] = temp.loc[(forecast_week), '1week']
-    #forecasts2[i] = temp.loc[(forecast_week - 1), '2week']
+    forecasts2[i] = temp.loc[(forecast_week - 1), '2week']
+
+print('student forecasts read')
 
 # %%
 # Read in the streamflow data and get the weekly average
 #reformat the start and end dates to the required USGS format: yyyy-mm-dd
 
+#Read in the previous weekly streamflow observations
+filepath = os.path.join('../weekly_results',
+                        'weekly_observations.csv')
+obs_table = pd.read_csv(filepath, index_col='forecast_week')
+
+
+# get start and end date of forecast week for 1 wk forecast
+week_date = ef.weekDates(forecast_week)
+start_date = week_date[0]
+stop_date = week_date[1]
+start_formatted = week_date[2]
+stop_formatted = week_date[3]
+
+#Get the flow from the USGS database
 obs_day = nwis.get_record(sites=station_id, service='dv',
-                          start=start_formatted, end=stop_formatted,
-                          parameterCd='00060')
+                    start=start_formatted, end=stop_formatted,
+                    parameterCd='00060')
+
+#convert to weekly 
 obs_week = np.mean(obs_day['00060_Mean'])
+
+#Write the values to the observation table
+obs_table.loc[forecast_week, 'observed'] = np.round(obs_week, 3)
+obs_table.loc[forecast_week, 'start_date'] = start_date
+obs_table.loc[forecast_week, 'end_date'] = stop_date
+obs_table.to_csv(filepath, index_label='forecast_week')
+
+print("Evaluating forecasts for", start_date, 'To', stop_date)
+print('Average streamflow for this week:', np.round(obs_week, 3))
 
 # calculate difference between student forecasts and reality
 dif1 = abs(forecasts1 - obs_week)
 dif2 = abs(forecasts2 - obs_week)
 
-print('Average streamflow for this week:', np.round(obs_week, 3))
 
 # %%
 # Make a data frame for the results
@@ -158,7 +175,7 @@ ax.set(title=title_string, xlabel="Students",
        ylabel="Weekly Avg Flow [cfs]")
 ax.set_xticklabels(firstnames, rotation=60)
 #ax.legend(fancybox=True, framealpha=1, shadow=True,
- #         borderpad=1)
+#          borderpad=1)
 
 plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
 fig3.patch.set_facecolor('xkcd:white')
@@ -169,5 +186,10 @@ plt.show()
 filename = 'Forecast_Summary_week' + str(forecast_week) + '.png'
 filepath = os.path.join('../weekly_plots', filename)
 fig3.savefig(filepath)
+
+
+
+
+
 
 

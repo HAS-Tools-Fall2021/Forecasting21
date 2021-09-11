@@ -88,6 +88,7 @@ def write_bonus(bonus_names, all_names, weeknum):
     bonus = pd.DataFrame(data=np.zeros(len(all_names)),
                          index=all_names,
                          columns=['points'])
+    bonus.index.name = 'names'
     bonus.loc[bonus_names, 'points'] = 1
     filename = 'bonus_week' + str(weeknum) + '.csv'
     bonus_file = os.path.join('../../weekly_results', filename)
