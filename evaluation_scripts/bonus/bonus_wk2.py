@@ -13,19 +13,13 @@ print('Everyone:', all_names)
 print()
 
 #make a list of all the people who got points this week
-points_list = ['Josh', 'Xingyu', 'Sierra', 'Xueyan', 'Andrew', 'Gigi', 'Jason', 'Monique']
+points_list = ['Josh', 'Xingyu', 'Sierra', 'Xueyan', 'Andrew', 'Gigi', 'Jason']
 print('People getting points already:', points_list)
 print()
 
 # Make a list of the names of people not getting points
 # Example with a list comprehension
 nopoints_list = [name for name in all_names if name not in points_list]
-
-#Example doing the same thign with a loop
-#nopoints_list = []
-#for name in all_names:
-#    if name not in points_list:
-#        nopoints_list.append(name)
 
 #Choose the first 3 people not getting points
 bonus_names = nopoints_list[0:3]
@@ -35,5 +29,12 @@ print()
 
 #Write out the bonus points
 ef.write_bonus(bonus_names, all_names, weeknum)
+
+
+#Example doing the same thing with a loop
+#nopoints_list = []
+#for name in all_names:
+#    if name not in points_list:
+#        nopoints_list.append(name)
 
 # %%

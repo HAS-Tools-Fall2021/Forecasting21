@@ -3,18 +3,19 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Josh       |      2     |
-|  2   |  Xingyu       |     2      |
-|  3   |  Andrew       |      1     |
-|  4   |  David       |       1    |
-|  5   |    Gigi     |     1      |
-|  6   |   Jason      |     1      |
-|  7   |    Kevin     |     1      |
-|  8   |         |           |
-|  9   |         |           |
-|  10  |         |           |
-|  11  |         |           |
+|  1   |  Josh       |      5     |
+|  2   |  Xingyu       |     5      |
+|  3   |  Gigi      |      3     |
+|  4   |  Kevin      |       2   |
+|  5   |  Andrew     |     2      |
+|  6   |  Jason      |    2      |
+|  7   |  Sierra     |     1      |
+|  8   |  Connal     |       1    |
+|  9   |  Monique     |     1      |
+|  10  |  David      |      1     |
+|  11  |  Xueyan      |     1      |
 |  12  |         |           |
+|  13  |         |           |
 
 
 # Detailed points summary:
@@ -29,18 +30,18 @@
   - Reason: First to submit their forecats
 
 ### Week 2: 9/5-9/11
-- **Observed flow** = xx cfs
+- **Observed flow** = 112 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 120 cfs, Josh & Xingyu
+  - Second place: 100 cfs, Andrew
+  - Third place: 130 cfs, Sierra & Xueyan
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 120 cfs, Gigi
+  - Second place: 125 cfs, Josh & Jason 
+  - Third place: 100 cfs, xingyu
 - **Bonus points**
-  - Names
-  - Reason
+  - Names: Connal, Monique, Kevin
+  - Reason: First three first names not getting points this week alphabetically
 
 ### Week 3: 9/12-9/18
 - **Observed flow** = xx cfs
