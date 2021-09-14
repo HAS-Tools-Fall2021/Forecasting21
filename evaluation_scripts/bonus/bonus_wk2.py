@@ -13,7 +13,7 @@ print('Everyone:', all_names)
 print()
 
 #make a list of all the people who got points this week
-points_list = ['Josh', 'Xingyu', 'Sierra', 'Xueyan', 'Andrew', 'Gigi', 'Jason', 'Monique']
+points_list = ['Josh', 'Xingyu', 'Sierra', 'Xueyan', 'Andrew', 'Gigi', 'Jason']
 print('People getting points already:', points_list)
 print()
 
@@ -21,7 +21,7 @@ print()
 # Example with a list comprehension
 nopoints_list = [name for name in all_names if name not in points_list]
 
-#Example doing the same thign with a loop
+#Example doing the same thing with a loop
 #nopoints_list = []
 #for name in all_names:
 #    if name not in points_list:
