@@ -17,7 +17,7 @@ import plot_functions as pf
 #                Use number for week that just ended,
 #                found in Forecst_Dates.csv 
 
-forecast_week = 2 
+forecast_week = 3 
 
 # %%
 station_id = "09506000"
