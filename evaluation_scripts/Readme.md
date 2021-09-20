@@ -38,7 +38,6 @@ I recommend you start these pre-evaluation steps *several* weeks in advance so y
 
 4. **Run some analysis on the forecast competition so far** Run `Forecast_analysis.py` to create some timeseries plots of the foreast competition so far. This script will create `Forecast_Boxplots_weekx.png` and `RankingEvolution_weekx.png` in the `weekly_plots` folder.  **NOTE:** some fo the functionality in this script may be useful for your bonus script writing. 
 
-5. **Compare the forecasts to 'truth', to date** After using `Get_Observations.py`. Update the week number in `forecast_analysis.py` and run the script to review the class performance of weekly forecasts to date. The `forecast_analysis.py` script will produce many types of graphs of everyone's 1 week and 2 week forecasts, so we can review everyone's performance to date.
 
 ### Post-Evaluation
 1. **Update the scoreboard** update the scoreboard.md file in the main directory of this folder with the points you applied this week and the updated overall scores. The information you need will come out of the print statements when you run `score_weekly.py` and `/weekly_results/scoreboard_weekk.csv` will have the total overall points and rankings summarized for you
