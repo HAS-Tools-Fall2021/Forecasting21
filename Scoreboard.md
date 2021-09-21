@@ -44,18 +44,18 @@
   - Reason: First three first names not getting points this week alphabetically
 
 ### Week 3: 9/12-9/18
-- **Observed flow** = xx cfs
+- **Observed flow** = 94 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 94 cfs, Kevin & Xiang
+  - Second place: 96 cfs, Connal
+  - Third place: 98 cfs, Stephanie
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 90 cfs, Gigi
+  - Second place: 100 cfs, Sierra, Xingyu,  Xueyan
+  - Third place: 85 cfs, Andrew
 - **Bonus points**
-  - Names
-  - Reason
+  - Josh, Monique, Jason
+  - Based on a random sampling
 
 ### Week 4: 9/19-9/25
 - **Observed flow** = xx cfs
