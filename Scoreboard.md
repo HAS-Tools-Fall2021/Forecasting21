@@ -46,7 +46,7 @@
 ### Week 3: 9/12-9/18
 - **Observed flow** = 94 cfs
 - **1 Week Forecast**:
-  - First place: 94 cfs, Kevin & Xiang
+  - First place: 94 cfs, Kevin and Xiang
   - Second place: 96 cfs, Connal
   - Third place: 98 cfs, Stephanie
 - **2 Week Forecasts**:
