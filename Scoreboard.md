@@ -3,19 +3,19 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Josh       |      5     |
-|  2   |  Xingyu       |     5      |
-|  3   |  Gigi      |      3     |
-|  4   |  Kevin      |       2   |
-|  5   |  Andrew     |     2      |
-|  6   |  Jason      |    2      |
-|  7   |  Sierra     |     1      |
-|  8   |  Connal     |       1    |
-|  9   |  Monique     |     1      |
-|  10  |  David      |      1     |
-|  11  |  Xueyan      |     1      |
-|  12  |         |           |
-|  13  |         |           |
+|  1   |  Josh       |      6     |
+|  2   |  Xingyu       |     6      |
+|  3   |  Gigi      |      5     |
+|  4   |  Kevin      |       4   |
+|  5   |  Andrew     |     3      |
+|  6   |  Jason      |    3      |
+|  7   |  Sierra     |     2      |
+|  8   |  Connal     |       2    |
+|  9   |  Monique     |     2      |
+|  10  |  Xueyan      |      2     |
+|  11  |  Xiang      |     2      |
+|  12  |  David   |       1    |
+|  13  |   Stephanie      |        1   |
 
 
 # Detailed points summary:
@@ -46,7 +46,7 @@
 ### Week 3: 9/12-9/18
 - **Observed flow** = 94 cfs
 - **1 Week Forecast**:
-  - First place: 94 cfs, Kevin & Xiang
+  - First place: 94 cfs, Kevin and Xiang
   - Second place: 96 cfs, Connal
   - Third place: 98 cfs, Stephanie
 - **2 Week Forecasts**:
