@@ -59,9 +59,11 @@ bonus_names = []
 
 print(sorted[['names']][:])
 
-bonus_names.append(sorted['names'])
+bonus_names=sorted['names'].values
 print(bonus_names)
 
 # %%
 # Write out the bonus points
 ef.write_bonus(bonus_names, all_names, weeknum)
+
+# %%
