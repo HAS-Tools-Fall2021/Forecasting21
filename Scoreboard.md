@@ -3,19 +3,19 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Josh       |      6     |
-|  2   |  Xingyu       |     6      |
-|  3   |  Gigi      |      5     |
-|  4   |  Kevin      |       4   |
-|  5   |  Andrew     |     3      |
-|  6   |  Jason      |    3      |
-|  7   |  Sierra     |     2      |
-|  8   |  Connal     |       2    |
-|  9   |  Monique     |     2      |
-|  10  |  Xueyan      |      2     |
-|  11  |  Xiang      |     2      |
-|  12  |  David   |       1    |
-|  13  |   Stephanie      |        1   |
+|  1   |  Xingyu       |      8     |
+|  2   |  Josh       |     6      |
+|  3   |  Kevin      |      5     |
+|  4   |  Gigi      |       5   |
+|  5   |  Andrew     |     4      |
+|  6   |  Jason      |    4      |
+|  7   |  Stephanie     |     4      |
+|  8   |  Monique     |       3    |
+|  9   |  Xueyan     |     3      |
+|  10  |  Xiang      |      3     |
+|  11  |  Sierra      |     2      |
+|  12  |  Connal   |       2    |
+|  13  |   David      |        2   |
 
 
 # Detailed points summary:
@@ -37,7 +37,7 @@
   - Third place: 130 cfs, Sierra & Xueyan
 - **2 Week Forecasts**:
   - First place: 120 cfs, Gigi
-  - Second place: 125 cfs, Josh & Jason 
+  - Second place: 125 cfs, Josh & Jason
   - Third place: 100 cfs, xingyu
 - **Bonus points**
   - Names: Connal, Monique, Kevin
@@ -58,18 +58,18 @@
   - Based on a random sampling
 
 ### Week 4: 9/19-9/25
-- **Observed flow** = xx cfs
+- **Observed flow** = 100.586 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 100 cfs, Xingyu
+  - Second place: 95 cfs, David and Stephanie
+  - Third place: 92 cfs, Xiang
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 95 cfs, Stephanie
+  - Second place: 109 cfs, Xueyan
+  - Third place: 115 cfs, Jason
 - **Bonus points**
-  - Names
-  - Reason
+  - Monique, Kevin, and Andrew
+  - Based on the three people who forecasted the lowest flow.
 
 ### Week 5: 9/26-10/2
 - **Observed flow** = xx cfs
