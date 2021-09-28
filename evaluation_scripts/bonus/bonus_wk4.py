@@ -18,27 +18,17 @@ print("Everyone in our class:", all_names)
 week4 = pd.read_csv('../../weekly_results/forecast_week4_results.csv')
 forecast = week4[['1week_points','2week_points']].to_numpy()
 # List of all of the names that got points this week 
-points_list = [ all_names[i] for i in range(len(forecast)) if forecast[i,0] > 0 or forecast[i,1] > 0]
-print('People getting points already:', points_list)
-# %%
-# DOES NOT FUCKING WORK
-
-# Determines who has already received points from the week1 and week2 forecasts
-points_set = set({})
-for x in week4['1week_ranking']:
-    if week4['1week_ranking'][x] <= 3:
-        points_set.add(week4['name'][x])
-
-for x in week4['2week_ranking']:
-    if week4['2week_ranking'][x] <= 3:
-        points_set.add(week4['name'][x])
-print("The people who received points this week:", points_set)
+points = []
+for i in range(len(forecast)):
+    if forecast[i, 0] > 0 or forecast[i, 1] > 0:
+        points.append(all_names[i])
+print("The people who received points this week:", points)
 
 # %%
 # Determines who has not received points 
 no_points = []
 for name in week4['name']:
-    if name not in points_set:
+    if name not in points:
         no_points.append(name)
 print(no_points)
 
@@ -50,7 +40,6 @@ for x in no_points:
     flow.append(temp['2week_forecast'].values[0])
 
 name_and_flow = pd.DataFrame(list(zip(no_points, flow)), columns=['names', 'flow'])
-print(name_and_flow)
 
 sorted = name_and_flow.sort_values(by='flow', ascending=True).head(3)
 print(sorted)
