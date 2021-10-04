@@ -73,9 +73,9 @@ def weekDates(weekNumber):
     stopDate = forecast_dates.loc[weekNumber, 'end_date']
 
     #Make formated versions for USGS API
-    start_temp = datetime.strptime(startDate, '%m/%d/%y')
+    start_temp = datetime.strptime(startDate, '%m/%d/%Y')
     start_format = start_temp.strftime("%Y-%m-%d")
-    end_temp = datetime.strptime(stopDate, '%m/%d/%y')
+    end_temp = datetime.strptime(stopDate, '%m/%d/%Y')
     end_format = end_temp.strftime("%Y-%m-%d")
 
     return startDate, stopDate, start_format, end_format
