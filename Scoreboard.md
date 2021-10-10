@@ -5,17 +5,15 @@
 |:-----|---------|---------  |
 |  1   |  Xingyu       |      9     |
 |  2   |  Sierra      |     6      |
-|  3   |  Josh      |      6     |
-|  4   |  Gigi      |       5   |
-|  5   |  Jason    |     5      |
-|  6   |  Andrew      |    5      |
-|  7   |  Kevin     |     5      |
-|  8   |  Stephanie     |     4      |
-|  9   |  Xueyan     |     4      |
-|  10  |  Xiang      |      4     |
-|  11  |  Monique      |     4      |
-|  12  |  David   |       3    |
-|  13  |   Connal      |        3   |
+|  3   |  Gigi      |       5   |
+|  4   |  Jason    |     5      |
+|  5   |  Andrew      |    5      |
+|  6   |  Kevin     |     5      |
+|  7   |  Stephanie     |     4      |
+|  8   |  Xueyan     |     4      |
+|  9  |  Xiang      |      4     |
+|  10  |  David   |       3    |
+|  11  |   Connal      |        3   |
 
 
 # Detailed points summary:
