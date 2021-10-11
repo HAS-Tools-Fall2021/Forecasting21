@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import os
 import eval_functions as ef
 import dataretrieval.nwis as nwis
-import plot_functions as pf
+# import plot_functions as pf
 
 # %%
 # User variables:
@@ -17,7 +17,7 @@ import plot_functions as pf
 #                Use number for week that just ended,
 #                found in Forecst_Dates.csv 
 
-forecast_week = 4
+forecast_week = 5
 
 # %%
 station_id = "09506000"

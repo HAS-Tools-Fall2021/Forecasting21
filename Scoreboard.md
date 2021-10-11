@@ -3,19 +3,17 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Xingyu       |      8     |
-|  2   |  Josh       |     6      |
-|  3   |  Kevin      |      5     |
-|  4   |  Gigi      |       5   |
-|  5   |  Andrew     |     4      |
-|  6   |  Jason      |    4      |
+|  1   |  Xingyu       |      9     |
+|  2   |  Sierra      |     6      |
+|  3   |  Gigi      |       5   |
+|  4   |  Jason    |     5      |
+|  5   |  Andrew      |    5      |
+|  6   |  Kevin     |     5      |
 |  7   |  Stephanie     |     4      |
-|  8   |  Monique     |       3    |
-|  9   |  Xueyan     |     3      |
-|  10  |  Xiang      |      3     |
-|  11  |  Sierra      |     2      |
-|  12  |  Connal   |       2    |
-|  13  |   David      |        2   |
+|  8   |  Xueyan     |     4      |
+|  9  |  Xiang      |      4     |
+|  10  |  David   |       3    |
+|  11  |   Connal      |        3   |
 
 
 # Detailed points summary:
@@ -72,18 +70,18 @@
   - Based on the three people who forecasted the lowest flow.
 
 ### Week 5: 9/26-10/2
-- **Observed flow** = xx cfs
+- **Observed flow** = 189 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 120 cfs, Sierra
+  - Second place: 112 cfs, Monique
+  - Third place: 110 cfs, Andrew and David
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 160 cfs, Sierra
+  - Second place: 132 cfs, Jason
+  - Third place: 100 cfs, Xingyu
 - **Bonus points**
-  - Names
-  - Reason
+  - Connal, Xiang, and Xueyan
+  - Based on the 3 people with the lowest overall score through week 4 not already recieving points in week 5.
 
 ### Week 6: 10/3-10-9
 - **Observed flow** = xx cfs
