@@ -17,7 +17,7 @@ import dataretrieval.nwis as nwis
 #                Use number for week that just ended,
 #                found in Forecst_Dates.csv 
 
-forecast_week = 5
+forecast_week = 6
 
 # %%
 station_id = "09506000"
