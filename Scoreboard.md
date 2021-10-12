@@ -86,16 +86,16 @@
 ### Week 6: 10/3-10-9
 - **Observed flow** = xx cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 180 cfs, Connal
+  - Second place: 170 cfs, Xingyu
+  - Third place: 190 cfs, Andrew
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 108 cfs, Xiang
+  - Second place: 97 cfs, Kevin
+  - Third place: 96 cfs, Jason
 - **Bonus points**
-  - Names
-  - Reason
+  - Stephanie, Sierra, Xiang
+  - Based on students having the greatest combined distance from the week1 and week2 standard deviation
 
 ### Week 7: 10/10-10/16
 - **Observed flow** = xx cfs
