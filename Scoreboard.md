@@ -3,17 +3,17 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Xingyu       |      9     |
-|  2   |  Sierra      |     6      |
+|  1   |  Xingyu       |      10     |
+|  2   |  Sierra      |     7      |
 |  3   |  Gigi      |       5   |
-|  4   |  Jason    |     5      |
+|  4   |  Jason    |     6      |
 |  5   |  Andrew      |    5      |
-|  6   |  Kevin     |     5      |
-|  7   |  Stephanie     |     4      |
-|  8   |  Xueyan     |     4      |
-|  9  |  Xiang      |      4     |
+|  6   |  Kevin     |     6      |
+|  7   |  Stephanie     |     5      |
+|  8   |  Xueyan     |     6      |
+|  9  |  Xiang      |      6     |
 |  10  |  David   |       3    |
-|  11  |   Connal      |        3   |
+|  11  |   Connal      |        6   |
 
 
 # Detailed points summary:
