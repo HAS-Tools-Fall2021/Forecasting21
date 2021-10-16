@@ -91,7 +91,7 @@ def write_bonus(bonus_names, all_names, weeknum):
     bonus.index.name = 'names'
     bonus.loc[bonus_names, 'points'] = 1
     filename = 'bonus_week' + str(weeknum) + '.csv'
-    bonus_file = os.path.join('../../weekly_results', filename)
+    bonus_file = os.path.join('..', '..', 'weekly_results', filename)
     bonus.to_csv(bonus_file)
     print("Bonus File Written")
 
