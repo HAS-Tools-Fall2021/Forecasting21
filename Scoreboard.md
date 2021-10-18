@@ -3,17 +3,17 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Xingyu       |      10     |
-|  2   |  Sierra      |     7      |
-|  3   |  Gigi      |       5   |
-|  4   |  Jason    |     6      |
-|  5   |  Andrew      |    5      |
-|  6   |  Kevin     |     6      |
-|  7   |  Stephanie     |     5      |
-|  8   |  Xueyan     |     6      |
-|  9  |  Xiang      |      6     |
-|  10  |  David   |       3    |
-|  11  |   Connal      |        6   |
+|  1   |  Xingyu    | 11     |
+|  2   |  Xiang     |  9     |
+|  3   |  Sierra    |  7     |
+|  3   |  Connal    |  7     |
+|  3   |  Kevin     |  7     |
+|  3   |  Gigi      |  7     |
+|  3   |  Jason     |  7     |
+|  3   |  Xueyan    |  7     |
+|  4   |  Stephanie |  6     |
+|  5   |  Andrew    |  5     |
+|  6   |  David     |  4     |
 
 
 # Detailed points summary:
@@ -98,18 +98,18 @@
   - Based on students having the greatest combined distance from the week1 and week2 standard deviation
 
 ### Week 7: 10/10-10/16
-- **Observed flow** = xx cfs
+- **Observed flow** = 156 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 157 cfs, Gigi
+  - Second place: 159 cfs, Xiang
+  - Third place: 161 cfs, Jason & Stephanie
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 150 cfs, Xiang
+  - Second place: 174 cfs, Connal
+  - Third place: 180 cfs, Xingyu
 - **Bonus points**
-  - Names
-  - Reason
+  - Kevin, David, Xueyan
+  - Based on the lowest frequency of getting points (bonus points not included).
 
 ### Week 8: 10/17-10/23
 - **Observed flow** = xx cfs

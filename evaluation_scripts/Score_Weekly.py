@@ -1,8 +1,8 @@
 # This script is used to score the 1 week and 2 week forecasts
 
 # %%
-from datetime import datetime
-from matplotlib.pyplot import xticks
+# from datetime import datetime
+# from matplotlib.pyplot import xticks
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +15,7 @@ import dataretrieval.nwis as nwis
 # User variables:
 # forecast_week: the week number that you are judging.
 #                Use number for week that just ended,
-#                found in Forecst_Dates.csv 
+#                found in Forecst_Dates.csv
 
 forecast_week = 7
 
@@ -45,9 +45,9 @@ print('student forecasts read')
 
 # %%
 # Read in the streamflow data and get the weekly average
-#reformat the start and end dates to the required USGS format: yyyy-mm-dd
+# reformat the start and end dates to the required USGS format: yyyy-mm-dd
 
-#Read in the previous weekly streamflow observations
+# Read in the previous weekly streamflow observations
 filepath = os.path.join('..', 'weekly_results',
                         'weekly_observations.csv')
 obs_table = pd.read_csv(filepath, index_col='forecast_week')
@@ -60,15 +60,15 @@ stop_date = week_date[1]
 start_formatted = week_date[2]
 stop_formatted = week_date[3]
 
-#Get the flow from the USGS database
+# Get the flow from the USGS database
 obs_day = nwis.get_record(sites=station_id, service='dv',
-                    start=start_formatted, end=stop_formatted,
-                    parameterCd='00060')
+                          start=start_formatted, end=stop_formatted,
+                          parameterCd='00060')
 
-#convert to weekly 
+# convert to weekly
 obs_week = np.mean(obs_day['00060_Mean'])
 
-#Write the values to the observation table
+# Write the values to the observation table
 obs_table.loc[forecast_week, 'observed'] = np.round(obs_week, 3)
 obs_table.loc[forecast_week, 'start_date'] = start_date
 obs_table.loc[forecast_week, 'end_date'] = stop_date
@@ -123,14 +123,16 @@ summary.to_csv(filepath_out, index_label='name')
 
 # %%
 # print a summary
-print ('Scoring forecasts for week', forecast_week, ':', start_date, '-', stop_date)
+print('Scoring forecasts for week', forecast_week, ':', start_date, '-',
+      stop_date)
 print('Observed Flow =', round(obs_week, 3))
 
 print('1 Week Forecast')
 print('First Place = ', list(summary.loc[summary['1week_ranking'] == 1].index),
       'flow forecast = ', summary.loc[summary['1week_ranking'] == 1,
                                       '1week_forecast'].head(1).values)
-print('Second Place = ', list(summary.loc[summary['1week_ranking'] == 2].index),
+print('Second Place = ',
+      list(summary.loc[summary['1week_ranking'] == 2].index),
       'flow forecast = ', summary.loc[summary['1week_ranking'] == 2,
                                       '1week_forecast'].head(1).values)
 print('Third Place = ', list(summary.loc[summary['1week_ranking'] == 3].index),
@@ -141,7 +143,8 @@ print('2 Week Forecast')
 print('First Place = ', list(summary.loc[summary['2week_ranking'] == 1].index),
       'flow forecast = ', summary.loc[summary['2week_ranking'] == 1,
                                       '2week_forecast'].head(1).values)
-print('Second Place = ', list(summary.loc[summary['2week_ranking'] == 2].index),
+print('Second Place = ',
+      list(summary.loc[summary['2week_ranking'] == 2].index),
       'flow forecast = ', summary.loc[summary['2week_ranking'] == 2,
                                       '2week_forecast'].head(1).values)
 print('Third Place = ', list(summary.loc[summary['2week_ranking'] == 3].index),
@@ -151,31 +154,32 @@ print('Third Place = ', list(summary.loc[summary['2week_ranking'] == 3].index),
 
 # %%
 # Plot the forecasts for this week
-#calcualte the class averages for plotting
+# calcualte the class averages for plotting
 class_avg1 = np.mean(forecasts1)
 class_avg2 = np.mean(forecasts2)
 
-#setup the figure
+# setup the figure
 fig3, ax = plt.subplots()
 fig3.set_size_inches(10, 4)
 
-#plot the data
+# plot the data
 ax.plot(firstnames, forecasts1, 'sg', label='1 Week Fcst.', alpha=.8)
 ax.plot(firstnames, forecasts2, 'sb', label='2 Week Fcst.', alpha=.8)
 ax.axhline(y=class_avg1, linestyle='dotted',
-      label='1 Week Class Avg', alpha=.8, color='green')
+           label='1 Week Class Avg', alpha=.8, color='green')
 ax.axhline(y=class_avg2, linestyle='dotted',
            label='2 Week Class Avg', alpha=.8, color='blue')
 ax.axhline(y=obs_week, linestyle='dashed', label='Observed',
-            alpha=.8, color='red')
+           alpha=.8, color='red')
 
-#Set the titles and labels 
-title_string = 'Week ' + str(forecast_week) + ' Forecasts (' + start_date + '-' + stop_date + ')'
+# Set the titles and labels
+title_string = 'Week ' + str(forecast_week) + ' Forecasts (' +\
+               start_date + '-' + stop_date + ')'
 ax.set(title=title_string, xlabel="Students",
        ylabel="Weekly Avg Flow [cfs]")
 ax.set_xticklabels(firstnames, rotation=60)
-#ax.legend(fancybox=True, framealpha=1, shadow=True,
-#          borderpad=1)
+# ax.legend(fancybox=True, framealpha=1, shadow=True,
+#           borderpad=1)
 
 plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
 fig3.patch.set_facecolor('xkcd:white')

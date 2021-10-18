@@ -6,8 +6,8 @@ import pandas as pd
 import numpy as np
 from glob import glob
 import os
-import matplotlib.pyplot as plt
-from pandas.plotting import table
+# import matplotlib.pyplot as plt
+# from pandas.plotting import table
 
 # %%
 # Make a list of all the files in the results folder with names
@@ -20,12 +20,13 @@ file_listB = glob(os.path.join('..', 'weekly_results', 'bonus*.csv'))
 
 # Get the week numbers from the file list by splitting the strings
 forecast_names = [file_list[i].split('_')[2] for i in range(len(file_list))]
-bonus_names = [file_listB[i].split('_')[2][0:-4] for i in range(len(file_list))]
+bonus_names = [file_listB[i].split('_')[2][0:-4]
+               for i in range(len(file_list))]
 
-# Then get out just the week numbers and 
+# Then get out just the week numbers and
 forecast_nums = [int(i[4::]) for i in forecast_names]
 forecast_nums = np.sort(forecast_nums)
-forecast_week = np.max(forecast_nums) #current forecast week
+forecast_week = np.max(forecast_nums)  # current forecast week
 
 bonus_nums = [int(i[4::]) for i in bonus_names]
 bonus_nums = np.sort(bonus_nums)
@@ -77,10 +78,7 @@ for f in range(np.min(bonus_nums), np.max(bonus_nums)+1):
     score_weekly = score_weekly.rename(
         columns={'points': ('wk' + str(f) + '_bonus')})
 
-
-
 scoreboard['total'] = scoreboard['bonus'] + scoreboard['regular']
-
 
 scoreboard['rank'] = scoreboard.total.rank(method='dense', ascending=False)
 scoreboard = scoreboard.sort_values(by='total', ascending=False)

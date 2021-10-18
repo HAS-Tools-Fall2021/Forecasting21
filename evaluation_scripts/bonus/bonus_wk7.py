@@ -49,3 +49,5 @@ print(bonus_names)
 
 # Write out the bonus points
 ef.write_bonus(bonus_names, all_names, weeknum)
+
+# %%
