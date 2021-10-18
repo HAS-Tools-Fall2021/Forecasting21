@@ -17,7 +17,7 @@ import dataretrieval.nwis as nwis
 #                Use number for week that just ended,
 #                found in Forecst_Dates.csv 
 
-forecast_week = 6
+forecast_week = 7
 
 # %%
 station_id = "09506000"
@@ -48,7 +48,7 @@ print('student forecasts read')
 #reformat the start and end dates to the required USGS format: yyyy-mm-dd
 
 #Read in the previous weekly streamflow observations
-filepath = os.path.join('../weekly_results',
+filepath = os.path.join('..', 'weekly_results',
                         'weekly_observations.csv')
 obs_table = pd.read_csv(filepath, index_col='forecast_week')
 
@@ -184,14 +184,7 @@ plt.show()
 
 # Save the plot to a file
 filename = 'Forecast_Summary_week' + str(forecast_week) + '.png'
-filepath = os.path.join('../weekly_plots', filename)
+filepath = os.path.join('..', 'weekly_plots', filename)
 fig3.savefig(filepath)
-
-
-
-
-
-
-
 
 # %%
