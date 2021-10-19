@@ -3,17 +3,17 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Xingyu    | 11     |
+|  1   |  Xingyu    | 10     |
 |  2   |  Xiang     |  9     |
-|  3   |  Sierra    |  7     |
-|  3   |  Connal    |  7     |
-|  3   |  Kevin     |  7     |
-|  3   |  Gigi      |  7     |
-|  3   |  Jason     |  7     |
-|  3   |  Xueyan    |  7     |
-|  4   |  Stephanie |  6     |
-|  5   |  Andrew    |  5     |
-|  6   |  David     |  4     |
+|  3   |  Gigi      |  8     |
+|  4   |  Sierra    |  7     |
+|  4   |  Connal    |  7     |
+|  4   |  Kevin     |  7     |
+|  4   |  Jason     |  7     |
+|  4   |  Xueyan    |  7     |
+|  5   |  Stephanie |  6     |
+|  6   |  Andrew    |  5     |
+|  7   |  David     |  4     |
 
 
 # Detailed points summary:
@@ -106,7 +106,7 @@
 - **2 Week Forecasts**:
   - First place: 150 cfs, Xiang
   - Second place: 174 cfs, Connal
-  - Third place: 180 cfs, Xingyu
+  - Third place: 115 cfs, Gigi
 - **Bonus points**
   - Kevin, David, Xueyan
   - Based on the lowest frequency of getting points (bonus points not included).

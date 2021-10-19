@@ -41,6 +41,7 @@ nopoints_list = all_list[(all_list["1week_points"] +
                           all_list["2week_points"]) == 0].index
 freq = freq.loc[nopoints_list, :]
 freq = freq.sort_values(by=['freq'])
+print(freq)
 
 # %%
 # Pick bonux getting names by lowest frequency of getting points
