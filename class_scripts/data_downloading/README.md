@@ -1,5 +1,5 @@
 # Map Gallery Scripts
-This folder contains the scripts that accompany our [map gallery]https://docs.google.com/presentation/d/1Vx_A2FNrRM-08SPloBi5PI6AXIRu9lNdMyihj0gkxdE/edit?usp=sharing)
+This folder contains the scripts that accompany our [map gallery](https://docs.google.com/presentation/d/1jAU9PtItwcw3LbqZx6HlZEDVyuQ6_oo6iFLnWykQ6KY/edit?usp=sharing)
 
 Please add the script that generates your map to this folder.
 
