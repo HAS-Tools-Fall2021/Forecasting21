@@ -1,3 +1,8 @@
+# @Date:   2021-10-26T09:07:24-07:00
+# @Last modified time: 2021-10-26T09:10:36-07:00
+
+
+
 # %%
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -11,7 +16,7 @@ import urllib
 # %%
 # Read in data process
 
-mytoken = 
+mytoken =
 base_url = "http://api.mesowest.net/v2/stations/timeseries"
 
 # Specify arguments for API string
@@ -49,5 +54,6 @@ data = pd.DataFrame({header: precip_accum},
 
 # Convert into weekly mean
 data_weekly = data.resample('W').mean()
+data_weekly = data_weekly.fillna(0)
 
 # %%
