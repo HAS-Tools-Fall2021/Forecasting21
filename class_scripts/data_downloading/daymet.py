@@ -20,6 +20,8 @@ precip = responseDict['data']['prcp (mm/day)']
 data = pd.DataFrame({'year': year,
                      'yearday': yearday, "precip": precip})
 
+data.drop(data[data['year']<1989].index,inplace=True)
+
 data["year"] = data['year'].astype(int)
 data['yearday'] = data['yearday'].astype(int)
 
@@ -32,6 +34,11 @@ data.set_index(data.index-3285, inplace=True)
 for i in np.arange(0, 11680):
     temporary = datetime.datetime.strptime(data['datetime'][i], "%Y%j").strftime("%Y-%m-%d")
     data["datetime"][i] = datetime.datetime.strptime(temporary, "%Y-%m-%d")
+
+data['datetime']
+data.set_index(data['datetime'], inplace=True)
+data.drop(columns=['datetime', 'year', 'yearday'], inplace=True)
+data.columns = ['prcp']
 
 # %%
 # Near the Forecast Site
