@@ -8,6 +8,8 @@ import urllib.request as req
 import urllib
 # %%
 # East of Cottonwood
+# Link: https://daymet.ornl.gov/single-pixel/
+
 cottonwood_url = "https://daymet.ornl.gov/single-pixel/api/data?lat=34.7525&lon=-111.9058&vars=dayl,prcp,srad,swe,tmax,tmin,vp&format=json"
 response = req.urlopen(cottonwood_url)
 responseDict = json.loads(response.read())
