@@ -8,7 +8,7 @@ import urllib.request as req
 import urllib
 # %%
 # East of Cottonwood
-cottonwood_url = "https://daymet.ornl.gov/single-pixel/api/data?lat=34.7525&lon=-111.9058&vars=dayl,prcp,srad,swe,tmax,tmin,vp&start=1990-01-01&end=2020-12-31&format=json"
+cottonwood_url = "https://daymet.ornl.gov/single-pixel/api/data?lat=34.7525&lon=-111.9058&vars=dayl,prcp,srad,swe,tmax,tmin,vp&format=json"
 response = req.urlopen(cottonwood_url)
 responseDict = json.loads(response.read())
 responseDict['data'].keys()
@@ -19,6 +19,17 @@ precip = responseDict['data']['prcp (mm/day)']
 #make a dataframe from the data
 data = pd.DataFrame({'year': year,
                      'yearday': yearday, "precip": precip})
+
+data["year"] = data['year'].astype(int)
+data['yearday'] = data['yearday'].astype(int)
+
+#Datetime
+data['datetime'] = data['year'].astype(str)+data['yearday'].astype(str)
+data.set_index(data.index-3285, inplace=True)
+
+for i in np.arange(0, 11680):
+    temporary = datetime.datetime.strptime(data['datetime'][i], "#Y#j").strftime("%Y-%m-%d")
+    data["datetime"][i] = datetime.datetime.strptime(temporary, "%Y-%m-%d")
 
 # %%
 # Near the Forecast Site
@@ -44,3 +55,5 @@ data1.columns = ['prcp']
 
 # Generate weekly time series for prcp and streamflow during 1989-2020
 W_prcp = data1.resample('W').mean()
+
+# %%
