@@ -9,9 +9,8 @@ import json
 import urllib.request as req
 import urllib
 
-mytoken = '2937e314803a4e31b8423f6b5da86644' #insert your token here
+mytoken = '2937e314803a4e31b8423f6b5da86644' # Insert your token here
 base_url = "http://api.mesowest.net/v2/stations/timeseries"
-
 # Specific arguments for the data that we want
 args = {
     'start': '201901010000',
@@ -63,3 +62,5 @@ data = pd.DataFrame({'ACCUMULATION': precip}, index=pd.to_datetime(dateTime))
 
 # Now convert this to daily data using resample
 data_daily = data.resample('D').mean()
+
+# %%
