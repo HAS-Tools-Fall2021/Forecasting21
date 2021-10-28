@@ -5,15 +5,15 @@
 |:-----|---------|---------  |
 |  1   |  Xingyu    | 10     |
 |  2   |  Xiang     |  9     |
+|  2   |  Sierra    |  9     |
+|  2   |  Xueyan    |  9     |
 |  3   |  Gigi      |  8     |
-|  4   |  Sierra    |  7     |
+|  3   |  Kevin     |  8     |
 |  4   |  Connal    |  7     |
-|  4   |  Kevin     |  7     |
+|  4   |  Andrew    |  7     |
 |  4   |  Jason     |  7     |
-|  4   |  Xueyan    |  7     |
 |  5   |  Stephanie |  6     |
-|  6   |  Andrew    |  5     |
-|  7   |  David     |  4     |
+|  6   |  David     |  5     |
 
 
 # Detailed points summary:
@@ -112,18 +112,17 @@
   - Based on the lowest frequency of getting points (bonus points not included).
 
 ### Week 8: 10/17-10/23
-- **Observed flow** = xx cfs
+- **Observed flow** = 128 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 128 cfs, Andrew
+  - Second place: 130 cfs, Sierra
+  - Third place: 131 cfs, Kevin
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 130 cfs, Xueyan
+  - Second place: 124 cfs, David
+  - Third place: 144 cfs, Sierra
 - **Bonus points**
-  - Names
-  - Reason
+  - No Bonus points this week
 
 ### Week 9: 10/24-10/30
 - **Observed flow** = xx cfs
