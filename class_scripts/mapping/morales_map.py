@@ -8,7 +8,7 @@ import os
 
 # %%
 # Prepare data for AZ State Boundary using Geodatabase:
-
+# https://azgeo-open-data-agic.hub.arcgis.com/datasets/azgeo::arizona-state-boundary/about
 file = os.path.join('..', 'data',
                     'Arizona_State_Boundary-fgdb',
                     'd09edca433824603876f0a303adb5404.gdb')
@@ -55,7 +55,7 @@ fiona.listlayers(file)
 HUC8_1506 = gpd.read_file(file, layer="WBDHU8")
 
 # Prepare data for HUC1408 watershed using shapefile:
-
+# https://azgeo-open-data-agic.hub.arcgis.com/datasets/azgeo::us-4-digit-hus-subregion/explore?filters=eyJzdGF0ZXMiOlsiQVoiLCJBWixDQSxNWCxOViIsIkFaLENPLE5NLFVUIiwiQVosTVgiLCJBWixNWCxOTSIsIkFaLE5NIiwiQVosTlYsVVQiLCJBWixVVCJdfQ%3D%3D
 file = os.path.join('..', 'data',
                     'US_4-digit_HUs_AZ',
                     'US_4-digit_HUs_AZ.shp')
