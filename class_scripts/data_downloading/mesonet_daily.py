@@ -16,7 +16,7 @@ import urllib
 # %%
 # Read in data process
 
-mytoken =
+mytoken = [] # enter token here
 base_url = "http://api.mesowest.net/v2/stations/timeseries"
 
 # Specify arguments for API string
