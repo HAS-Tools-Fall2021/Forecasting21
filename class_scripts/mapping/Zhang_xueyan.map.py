@@ -87,4 +87,8 @@ HUC6.boundary.plot(ax=ax, color=None,
 ax.set_title(" Study region")
 ctx.add_basemap(ax, crs=HUC6.crs)
 fig.savefig('studyregion.jpg', dpi=400)
+<<<<<<< Updated upstream
 # %%
+=======
+    # %%
+>>>>>>> Stashed changes
