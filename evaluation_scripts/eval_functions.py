@@ -6,7 +6,7 @@ import numpy as np
 from glob import glob
 
 # %%
-# Forecast Functions Week 8
+# Forecast Functions Week 9
 
 def getLastNames():
     """Get classlist of last names.
