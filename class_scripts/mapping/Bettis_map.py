@@ -87,22 +87,18 @@ ax.set_title("HUC Boundaries")
 plt.show()
 
 # %%
-
+# POINTS NOT LINING UP?
 # Add some points
-# Payson:  32.230869, -111.325134
+## Payson:  32.230869, -111.325134
 # Phoenix : 33.448376, -112.074036
 # Stream gauge:  34.44833333, -111.7891667
-point_list = np.array([[-111.325134, 32.230869],
-                       [-111.7891667, 34.44833333],
-                       [-112.074036, 33.448376]])
+point_list = np.array([[-112.0740, 33.4484], [-111.7891667, 34.44833333]])
 # Make these into spatial features
 point_geom = [Point(xy) for xy in point_list]
-point_geom
 
 # Map a dataframe of these points
 point_df = gpd.GeoDataFrame(point_geom, columns=['geometry'],
                             crs=HU8.crs)
-
 
 # Plot these on the first dataset
 # Then we can plot just one layer at atime
@@ -132,15 +128,34 @@ HU8_project.boundary.plot(ax=ax, color=None,
 
 fig, ax = plt.subplots(figsize=(5, 5))
 gages_AZ.plot(column='LAT_GAGE', categorical=False,
-              legend=True, markersize=15, cmap='Set1',
-              ax=ax)
+              legend=True, legend_kwds={'label': r'Lat and Longitude'},
+              markersize=15, cmap='Set1', ax=ax)
 points_project.plot(ax=ax, color='black', marker='D',
                     label ="Stream Gauge, Payson, Phoenix (N-S)")
 HU8_project.boundary.plot(ax=ax, color=None,
                 edgecolor='blue',linewidth=0.5,
                 label="AZ Watershed boundary")
 ctx.add_basemap(ax, crs=gages_AZ.crs)
-ax.set(title = ' AZ points, lines, and projection')
+ax.set(title ='AZ points, lines, and projection', xlabel ='latitude',
+                ylabel ='longitude')
+ax.legend()
+fig.savefig("Sub-basin AZ")
+# %%
+# Converting the previous map to lat and longitude by projecting 
+# everything to the HU8 crs
+gages_project = gages_AZ.to_crs(HU8.crs)
+fig, ax = plt.subplots(figsize=(10, 10))
+gages_project.plot(column='LAT_GAGE', categorical=False,
+              legend=True, legend_kwds={'label': r'Lat and Longitude'},
+              markersize=15, cmap='Set1', ax=ax)
+point_df.plot(ax=ax, color='black', marker='D',
+                    label ="Stream Gauge and Phoenix (N-S)")
+HU8.boundary.plot(ax=ax, color=None,
+                edgecolor='blue',linewidth=0.5,
+                label="AZ Watershed boundary")
+ctx.add_basemap(ax, crs=HU8.crs)
+ax.set(title ='AZ points, lines, and projection', xlabel ='latitude',
+                ylabel ='longitude')
 ax.legend()
 fig.savefig("Sub-basin AZ")
 # %%
