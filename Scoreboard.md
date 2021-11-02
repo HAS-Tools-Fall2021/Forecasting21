@@ -127,16 +127,16 @@
 ### Week 9: 10/24-10/30
 - **Observed flow** = xx cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 129.5 cfs, Kevin
+  - Second place: 129 cfs, Sierra
+  - Third place: 139 cfs, Gigi
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 131.98 cfs, David
+  - Second place: 128 cfs, Sierra
+  - Third place: 144 cfs, Xueyan
 - **Bonus points**
-  - Names
-  - Reason
+  - Xingyu, Stephanie, Andrew
+  - Highest forecasted flow values for both weeks and did not already receive points.
 
 ### Week 10: 10/31-11/6
 - **Observed flow** = xx cfs
