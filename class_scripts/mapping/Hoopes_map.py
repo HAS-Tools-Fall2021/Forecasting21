@@ -139,14 +139,16 @@ plt.show()
 # Now plot again
 fig, ax = plt.subplots(figsize=(10, 10))
 gages_project.plot(column='DRAIN_SQKM', categorical=False,
-                   legend=True, markersize=25, cmap='cividis',
-                   ax=ax)
-river_project.plot(ax=ax, color='blue')
-point_df.plot(ax=ax, color='crimson')
+                   legend=True, legend_kwds={'label': r'Drainage Area (km^2)'},
+                   markersize=25, cmap='cividis', ax=ax, label='Gages')
+river_project.plot(ax=ax, color='blue', label='Rivers')
+point_df.plot(ax=ax, color='crimson', label='Forecast Points')
 saltverde.boundary.plot(ax=ax, color=None,
-                        edgecolor='black', linewidth=1)
+                        edgecolor='black', linewidth=1,
+                        label='Watershed Boundary')
 ax.set(title="Salt River Basin Drainage (km^2)", xlabel="Longitude",
        ylabel="Latitude")
 ctx.add_basemap(ax, crs=saltverde.crs)
+ax.legend()
 plt.show()
 fig.savefig('streamflow_map.png')
