@@ -3,17 +3,17 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Xingyu    | 10     |
-|  2   |  Xiang     |  9     |
-|  2   |  Sierra    |  9     |
-|  2   |  Xueyan    |  9     |
-|  3   |  Gigi      |  8     |
-|  3   |  Kevin     |  8     |
-|  4   |  Connal    |  7     |
-|  4   |  Andrew    |  7     |
-|  4   |  Jason     |  7     |
-|  5   |  Stephanie |  6     |
-|  6   |  David     |  5     |
+|  1   |  Kevin   | 13     |
+|  1   |  Gigi    |  13     |
+|  1   |  Xingyu    |  13     |
+|  2   |  Sierra    |  12     |
+|  3   |  Andrew     |  11     |
+|  3   |  Xueyan     |  11     |
+|  3   |  Xiang    |  11     |
+|  4   |  David    |  9     |
+|  5   |  Connal     |  8     |
+|  5   |  Jason |  8     |
+|  6   |  Stephanie     |  7     |
 
 
 # Detailed points summary:
@@ -153,18 +153,18 @@
   - Reason
 
 ### Week 11: 11/7-11/13
-- **Observed flow** = xx cfs
+- **Observed flow** = 143.86 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 144 cfs, Andrew
+  - Second place: 144.5 cfs, Kevin
+  - Third place: 140 cfs, Xingyu
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 149 cfs, Xiang
+  - Second place: 154 cfs, David
+  - Third place: 160 cfs, Xingyu + Xueyan
 - **Bonus points**
-  - Names
-  - Reason
+  - Names: No bonus points this week
+  - Reason: Laura Judge
 
 ### Week 12: 11/14-11/20
 - **Observed flow** = xx cfs
