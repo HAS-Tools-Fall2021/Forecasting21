@@ -10,7 +10,7 @@ import math
 
 # %%
 # Kevin Dyer: Assigning bonus points to people that didn't recieve points
-# and have an 'E' in their first name
+# and have an 'A' in their first name
 
 # Retreiving everyone's name in the class
 weeknum = 10
@@ -21,6 +21,7 @@ print(all_names)
 # Reading from weekly_results .csv files
 week10 = pd.read_csv('../../weekly_results/forecast_week10_results.csv')
 forecast = week10[['1week_points','2week_points']].to_numpy()
+
 # %%
 # List of all of the names that got points this week
 points = []
@@ -38,11 +39,14 @@ for name in week10['name']:
 print(no_points)
 # %%
 # Finding the 3 people who didn't recieve points
-# and have an 'E' in their first name
+# and have an 'A' in their first name
+a_names = [match for match in no_points if "a" in match]
 
+bonus_names = a_names[:3]
 
-bonus_names = ['']
+print(bonus_names)
 
 # %%
 # Write out the bonus points
 ef.write_bonus(bonus_names, all_names, weeknum)
+# %%
