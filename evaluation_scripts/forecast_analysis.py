@@ -8,7 +8,7 @@ import os
 import eval_functions as ef
 
 # %%
-forecast_week = 12  # CHANGE to reflect current week
+forecast_week = 12 # CHANGE to reflect current week
 
 # %%
 station_id = "09506000"
@@ -56,6 +56,31 @@ for i in range(forecast_week):
 # Read in the observed flows
 weekly_flows = pd.read_csv("../weekly_results/weekly_observations.csv")
 
+# %%
+# Make boxplots of the forecasts over time
+# Create a combined and melted dataframe of the 1 and 2 week forecasts
+week1plot = weekly_forecast1w.assign(Leadtime='1 week outlook')
+week2plot = weekly_forecast2w.assign(Leadtime='2 week outlook')
+cdf = pd.concat([week1plot, week2plot])
+mdf = pd.melt(cdf, id_vars=['Leadtime'], var_name=['week'])
+print(mdf.head())
+
+# Plot
+fig, ax = plt.subplots()
+my_pal = {"1 week outlook": "lightgreen", "2 week outlook": "lightblue"}
+ax = sns.boxplot(x="week", y="value", hue="Leadtime", data=mdf, palette=my_pal,
+                 linewidth=0.3)
+ax.set_xlabel('Forecast Week')
+ax.set_ylabel('Flow (cfs)')
+plt.scatter((weekly_flows.index - 0.2), weekly_flows['observed'], marker='*',
+            s=100, color='darkred')
+
+plt.show()
+
+# Save the plot to a file
+filename = 'Forecast_Boxplots_week' + str(forecast_week) + '.png'
+filepath = os.path.join('../weekly_plots', filename)
+fig.savefig(filepath)
 
 
 # %%
@@ -102,5 +127,3 @@ plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
 filename = 'RankingEvolution_week' + str(forecast_week) + '.png'
 filepath = os.path.join('../weekly_plots', filename)
 fig.savefig(filepath, bbox_inches='tight')
-
-# %%
