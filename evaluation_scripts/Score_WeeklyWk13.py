@@ -1,5 +1,3 @@
-# This script is used to score the 1 week and 2 week forecasts
-
 # %%
 # from datetime import datetime
 # from matplotlib.pyplot import xticks
@@ -108,11 +106,9 @@ summary.loc[summary['1week_ranking'] == 2, '1week_points'] = 1
 summary.loc[summary['1week_ranking'] == 3, '1week_points'] = 1
 
 # Add points for the 2 week forecasts
+# Only added points to 1st place b/c this was for the Team Forecasts
 summary['2week_points'] = np.zeros(nstudent)
-summary.loc[summary['2week_ranking'] == 1, '2week_points'] = 2
-summary.loc[summary['2week_ranking'] == 2, '2week_points'] = 1
-summary.loc[summary['2week_ranking'] == 3, '2week_points'] = 1
-
+summary.loc[summary['2week_ranking'] == 1, '2week_points'] = 1
 
 # %%
 # Write out the reults

@@ -8,7 +8,11 @@ import os
 import eval_functions as ef
 
 # %%
+<<<<<<< HEAD
 forecast_week = 12 # CHANGE to reflect current week
+=======
+forecast_week = 13  # CHANGE to reflect current week
+>>>>>>> main
 
 # %%
 station_id = "09506000"
