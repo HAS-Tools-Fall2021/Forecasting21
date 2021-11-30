@@ -3,17 +3,17 @@
 
 |      | Name    | Points    |
 |:-----|---------|---------  |
-|  1   |  Kevin   | 13     |
-|  1   |  Gigi    |  13     |
-|  1   |  Xingyu    |  13     |
-|  2   |  Sierra    |  12     |
-|  3   |  Andrew     |  11     |
-|  3   |  Xueyan     |  11     |
-|  3   |  Xiang    |  11     |
-|  4   |  David    |  9     |
-|  5   |  Connal     |  8     |
+|  1   |  Kevin   | 16     |
+|  1   |  Gigi    |  14     |
+|  1   |  Xingyu    |  16     |
+|  2   |  Sierra    |  15     |
+|  3   |  Andrew     |  17     |
+|  3   |  Xueyan     |  13     |
+|  3   |  Xiang    |  12     |
+|  4   |  David    |  12     |
+|  5   |  Connal     |  10    |
 |  5   |  Jason |  8     |
-|  6   |  Stephanie     |  7     |
+|  6   |  Stephanie     |  9     |
 
 
 # Detailed points summary:
@@ -181,18 +181,18 @@
   - Reason
 
 ### Week 13: 11/21-11/27
-- **Observed flow** = xx cfs
+- **Observed flow** = 170.857 cfs
 - **1 Week Forecast**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 170 cfs, Andrew
+  - Second place: 164 cfs, Kevin
+  - Third place: 160 cfs, Sierra
 - **2 Week Forecasts**:
-  - First place: XX cfs, Name(s)
-  - Second place: XX cfs, Name(s)
-  - Third place: XX cfs, Name(s)
+  - First place: 134.9 cfs, Team 2 (Andrew, Connal, Xingyu, Steph)
+  - Second place: 118 cfs, Team 1 (Sierra, Gigi, Xiang)
+  - Third place: 89 cfs, Team 3 (Kevin, David, Xueyan)
 - **Bonus points**
-  - Names
-  - Reason
+  - Xueyan, Xiang, David
+  - Whoever did not receive points and whose name added up to be the highest using values assigned to each letter in the alphabet.
 
 ### Week 14: 11/28-12/4
 - **Observed flow** = xx cfs
