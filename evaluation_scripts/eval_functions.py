@@ -23,7 +23,7 @@ def getLastNames():
                 contains students's last names
     """
     lastNames = ['Bettis', 'Boyd', 'Dyer',
-                 'Giralte', 'Hoopes', 'Morales', 'Schlottman',
+                 'Giralte', 'Hoopes', 'Morales',
                  'Serrano', 'XiZhang', 'XuZhang', 'Zhong']
     return lastNames
 
@@ -43,7 +43,7 @@ def getFirstNames():
                  contains student's first names
     """
     firstNames = ['Sierra', 'Connal', 'Kevin', 
-                   'Gigi', 'Andrew', 'David', 'Jason', 
+                   'Gigi', 'Andrew', 'David', 
                    'Stephanie', 'Xingyu', 'Xueyan', 'Xiang']
     return firstNames
 
