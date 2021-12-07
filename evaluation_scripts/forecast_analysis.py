@@ -81,7 +81,7 @@ plt.show()
 # Save the plot to a file
 filename = 'Forecast_Boxplots_week' + str(forecast_week) + '.png'
 filepath = os.path.join('../weekly_plots', filename)
-fig.savefig(filepath)
+fig.savefig(filepath, bbox_inches='tight')
 
 
 # %%
@@ -104,6 +104,9 @@ for f in range(1, (forecast_week+1)):
         print('here')
         ranks = ranks.join(temp['rank'], how='inner', rsuffix=('_'+str(f)))
 
+# remove students who are not in class anymore
+ranks = ranks.dropna()
+
 # get rid of the extra columns from the first week
 ranks = ranks.rename(columns={'rank': 'rank_1'})
 ranks = ranks.drop(['regular', 'bonus', 'total'], axis=1)
@@ -120,7 +123,7 @@ ax.set_xlabel("Forecast Week")
 ax.set_xticks(range(forecast_week))
 ax.set_xticklabels(range(1, forecast_week+1))
 ax.set_ylabel("Class Ranking")
-ax.set_title('Forceast Competition Rankings')
+ax.set_title('Forecast Competition Rankings')
 ax.invert_yaxis()
 plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
 

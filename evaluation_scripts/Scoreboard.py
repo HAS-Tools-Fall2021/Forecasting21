@@ -63,6 +63,9 @@ for f in range(np.min(forecast_nums), np.max(forecast_nums)+1):
     score_weekly = score_weekly.rename(
         columns={'2week_points': ('wk' + str(f) + '_2wk.fcst')})
 
+# remove students who are not in class anymore
+score_weekly = score_weekly.dropna()
+
 # Add in thte bonus points
 # for file in file_listB:
 for f in range(np.min(bonus_nums), np.max(bonus_nums)+1):
@@ -82,6 +85,8 @@ scoreboard['total'] = scoreboard['bonus'] + scoreboard['regular']
 
 scoreboard['rank'] = scoreboard.total.rank(method='dense', ascending=False)
 scoreboard = scoreboard.sort_values(by='total', ascending=False)
+# remove students who are not in class anymore
+scoreboard = scoreboard.dropna()
 print(scoreboard)
 
 # %%
