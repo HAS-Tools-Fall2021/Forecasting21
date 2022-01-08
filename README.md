@@ -60,17 +60,14 @@ Each week one or two people will be assigned the job of 'Evaluator'. Your job de
 1. **'Git' oriented**. Spend some time getting familiar with the structure of the forecast repo.  Make sure you are comfortable with the setup and what you will be doing so you can ask any questions the week before.
   -  The folder `evaluation_scripts` contains all of the python scripts used to evaluate forecasts. *Take time to understand the structure of this folder. The best place to get started is by looking at the `readme.md` contained within this folder.*
 
-2. **Create a Branch for your work**. See the evaluator instructions above for more details on this. It's best not to create your branch until the Wednesday before you assignment is due so that previous weeks work can be merged in first.
+2. **Run the forecast evaluation scripts to score the weekly forecasts** after the forecast submission deadline (noon on Monday). You will be evaluating two forecasts (1) the one week forecast from last week and (2) the two week forecast from  two weeks ago
 
-3. **Run the forecast evaluation scripts to score the weekly forecasts** after the forecast submission deadline (noon on Monday). You will be evaluating two forecasts (1) the one week forecast from last week and (2) the two week forecast from  two weeks ago
+3. **Assign your bonus points**.  You can use literally whatever criteria you want to assign bonus  points as long as you provide some rational for how you did it, and only use python to evaluate whatever criteria you choose.  Also, note the scoring rules above that you can't give bonus points to  yourself of anyone already receiving points in a given week. Your analysis should be submitted in a separate python script named: `"`bonus_weekx.py` in the `evaluation_scripts/bonus` folder.
 
-4. **Assign your bonus points**.  You can use literally whatever criteria you want to assign bonus  points as long as you provide some rational for how you did it, and only use python to evaluate whatever criteria you choose.  Also, note the scoring rules above that you can't give bonus points to  yourself of anyone already receiving points in a given week. Your analysis should be submitted in a separate python script named: `"`bonus_weekx.py` in the `evaluation_scripts/bonus` folder.
+4. **Update the scoreboard, seasonal forecast leaders and weekly points awarded** in the `Scoreboard.md` file
 
-5. **Update the scoreboard, seasonal forecast leaders and weekly points awarded** in the `Scoreboard.md` file
+5.  **Make a short presentation for Tuesday class.**  Your slides should  include the following (1) summarize the points awarded this week, (2) the current scores and how they changed, (3) how you awarded your bonus points and, (4) provide a summary of some component of the evaluation scripts that relate  to what we have been learning.
 
-6.  **Make a short presentation for Tuesday class.**  Your slides should  include the following (1) summarize the points awarded this week, (2) the current scores and how they changed, (3) how you awarded your bonus points and, (4) provide a summary of some component of the evaluation scripts that relate  to what we have been learning.
-
-7.  **Submit a pull request to merge your branch back into the master** this should be done before class on Tuesday.
 
 **Note 1:** *You can start working on your bonus analysis script before the forecasts have actually been submitted and just run it after Monday at noon.*
 
